@@ -109,6 +109,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
+            position: relative;
         }
 
         body.modal-open {
@@ -1834,32 +1835,32 @@
             }
 
             .lang-switch-btn {
-                top: 1rem;
-                right: 1rem;
-                padding: 0.4rem 0.8rem;
-                font-size: 0.8rem;
+                top: 1.25rem;
+                right: 1.25rem;
+                padding: 0.3rem 0.5rem;
+                font-size: 0.95rem;
             }
         }
 
-        /* Language Switch Button: Cố định góc phải trên cùng, màu đen, không hiệu ứng */
+        /* Language Switch Button: Cố định góc phải trên cùng, không cuộn theo, chỉ hiện ký tự màu đen, không khung, không nền */
         .lang-switch-btn {
-            position: fixed;
+            position: absolute;
             top: 1.5rem;
             right: 2rem;
             z-index: 1000;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: #1A1917;
-            color: #FAF7F2;
+            background: transparent;
+            color: #1A1917;
             font-family: var(--font-heading);
-            font-size: 0.85rem;
+            font-size: 1rem;
             font-weight: 700;
             letter-spacing: 0.05em;
-            padding: 0.45rem 0.95rem;
-            border-radius: var(--radius-md);
-            text-decoration: none;
+            padding: 0.35rem 0.6rem;
             border: none;
+            border-radius: 0;
+            text-decoration: none;
             cursor: pointer;
             box-shadow: none;
             transition: none;
@@ -1869,11 +1870,12 @@
         .lang-switch-btn:hover,
         .lang-switch-btn:focus,
         .lang-switch-btn:active {
-            background-color: #1A1917;
-            color: #FAF7F2;
+            background: transparent;
+            color: #1A1917;
             transform: none;
             box-shadow: none;
             outline: none;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -2747,13 +2749,14 @@
         const langSwitchBtn = document.getElementById('langSwitchBtn');
         if (langSwitchBtn) {
             const isEnglish = document.documentElement.lang === 'en' || window.location.pathname.includes('/thaof12-en');
+            const isLocalFile = window.location.protocol === 'file:';
             if (isEnglish) {
                 langSwitchBtn.textContent = 'VI';
-                langSwitchBtn.href = 'https://thaof12.github.io/';
+                langSwitchBtn.href = isLocalFile ? '../portfolio/index.html' : 'https://thaof12.github.io/';
                 langSwitchBtn.setAttribute('aria-label', 'Chuyển sang tiếng Việt');
             } else {
                 langSwitchBtn.textContent = 'EN';
-                langSwitchBtn.href = 'https://thaof12.github.io/thaof12-en/';
+                langSwitchBtn.href = isLocalFile ? '../portfolio-en/index.html' : 'https://thaof12.github.io/thaof12-en/';
                 langSwitchBtn.setAttribute('aria-label', 'Chuyển sang tiếng Anh');
             }
         }
