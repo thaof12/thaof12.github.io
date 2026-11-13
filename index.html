@@ -12,6 +12,10 @@
     <meta property="og:description" content="Sinh viên ngành Kỹ sư phần mềm vừa hoàn thành chương trình học (dự kiến nhận bằng 30/11/2026), có kinh nghiệm thực hành kiểm thử và sửa lỗi trên game và web tự phát triển.">
     <meta property="og:type" content="website">
     
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="vi" href="https://thaof12.github.io/">
+    <link rel="alternate" hreflang="en" href="https://thaof12.github.io/thaof12-en/">
+    
     <title>Trần Thế Hào | Game QA & Software Engineer</title>
     
     <!-- Favicon -->
@@ -1828,10 +1832,55 @@
             .hero-buttons .btn {
                 width: 100%;
             }
+
+            .lang-switch-btn {
+                top: 1rem;
+                right: 1rem;
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Language Switch Button: Cố định góc phải trên cùng, màu đen, không hiệu ứng */
+        .lang-switch-btn {
+            position: fixed;
+            top: 1.5rem;
+            right: 2rem;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1A1917;
+            color: #FAF7F2;
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            padding: 0.45rem 0.95rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            box-shadow: none;
+            transition: none;
+            line-height: 1;
+        }
+
+        .lang-switch-btn:hover,
+        .lang-switch-btn:focus,
+        .lang-switch-btn:active {
+            background-color: #1A1917;
+            color: #FAF7F2;
+            transform: none;
+            box-shadow: none;
+            outline: none;
         }
     </style>
 </head>
 <body>
+
+    <!-- Language Switch Button -->
+    <a href="https://thaof12.github.io/thaof12-en/" class="lang-switch-btn" id="langSwitchBtn" aria-label="Chuyển sang tiếng Anh">EN</a>
 
 
     <!-- Hero Section -->
@@ -2693,6 +2742,21 @@
                 closeQaLightbox();
             }
         });
+
+        // Language Switch Controller
+        const langSwitchBtn = document.getElementById('langSwitchBtn');
+        if (langSwitchBtn) {
+            const isEnglish = document.documentElement.lang === 'en' || window.location.pathname.includes('/thaof12-en');
+            if (isEnglish) {
+                langSwitchBtn.textContent = 'VI';
+                langSwitchBtn.href = 'https://thaof12.github.io/';
+                langSwitchBtn.setAttribute('aria-label', 'Chuyển sang tiếng Việt');
+            } else {
+                langSwitchBtn.textContent = 'EN';
+                langSwitchBtn.href = 'https://thaof12.github.io/thaof12-en/';
+                langSwitchBtn.setAttribute('aria-label', 'Chuyển sang tiếng Anh');
+            }
+        }
     </script>
 </body>
 </html>
