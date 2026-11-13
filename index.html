@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Trần Thế Hào - Game Designer & Software Engineer Portfolio. Chuyên môn về Game 2D giáo dục, Cocos Creator, Godot Engine, ReactJS, Supabase.">
-    <meta name="keywords"
-        content="Game Designer, Software Engineer, Cocos Creator, Godot Engine, ReactJS, Trần Thế Hào, Portfolio">
+    <meta name="description" content="Trần Thế Hào - Game QA & Software Engineer Portfolio. Kinh nghiệm thực chiến về đảm bảo chất lượng game (game quality assurance), thiết kế test case, báo cáo lỗi trên Jira, Godot Engine, Cocos Creator, ReactJS.">
+    <meta name="keywords" content="Game QA, QA Tester, Software Engineer, Jira, Test Cases, Cocos Creator, Godot Engine, ReactJS, Trần Thế Hào, Portfolio">
     <meta name="author" content="Trần Thế Hào">
-
+    
     <!-- Open Graph -->
-    <meta property="og:title" content="Trần Thế Hào | Game Designer & Software Engineer">
-    <meta property="og:description"
-        content="Sinh viên năm cuối ngành Kỹ sư phần mềm, định hướng Game Designer cho game giáo dục 2D.">
+    <meta property="og:title" content="Trần Thế Hào | Game QA & Software Engineer">
+    <meta property="og:description" content="Sinh viên tốt nghiệp ngành Kỹ sư phần mềm với kinh nghiệm thực tế trong kiểm thử và gỡ lỗi game cùng các nền tảng web, định hướng phát triển sự nghiệp trong lĩnh vực đảm bảo chất lượng game (Game QA).">
     <meta property="og:type" content="website">
-
-    <title>Trần Thế Hào | Game Designer & Software Engineer</title>
-
+    
+    <title>Trần Thế Hào | Game QA & Software Engineer</title>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
-
+    
     <!-- Google Fonts: Playfair Display (hỗ trợ hoàn hảo tiếng Việt, sửa lỗi khoảng cách dấu), Manrope, Plus Jakarta Sans & Fira Code -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    
     <style>
         /* ==========================================================================
            TYPOGRAPHY & DESIGN SYSTEM
@@ -52,33 +46,33 @@
             --bg-surface: #FFFFFF;
             --bg-subtle: #F3EFE9;
             --bg-subtle-hover: #EBE5DC;
-
+            
             /* Borders */
             --border-light: #ECE5DA;
             --border: #DFD7CA;
             --border-dark: #C5BCAD;
-
+            
             /* Inks */
             --text-heading: #1A1917;
             --text-body: #3E3B36;
             --text-muted: #6B6760;
             --text-subtle: #969188;
-
+            
             /* Solid Accent Colors */
             --primary: #1A1917;
             --primary-hover: #2D2B28;
             --primary-text: #FAF7F2;
-
+            
             --accent-link: #1B4D3E;
             --status-green: #1B7A42;
             --status-bg: #EAF5EE;
-
+            
             /* Shadows */
             --shadow-sm: 0 1px 2px rgba(26, 25, 23, 0.04);
             --shadow-md: 0 4px 12px rgba(26, 25, 23, 0.05);
             --shadow-lg: 0 12px 28px rgba(26, 25, 23, 0.07);
             --shadow-card: 0 1px 3px rgba(26, 25, 23, 0.04), 0 6px 18px rgba(26, 25, 23, 0.03);
-
+            
             /* Radii & Transitions */
             --radius-sm: 6px;
             --radius-md: 10px;
@@ -89,9 +83,7 @@
         }
 
         /* Base Resets */
-        *,
-        *::before,
-        *::after {
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -106,8 +98,7 @@
 
         body {
             font-family: var(--font-body);
-            font-size: 1rem;
-            /* 21px (tăng 5px so với 16px trước đây) */
+            font-size: 1rem; /* 21px (tăng 5px so với 16px trước đây) */
             background-color: var(--bg-base);
             color: var(--text-body);
             line-height: 1.68;
@@ -121,8 +112,7 @@
         }
 
         /* Utility Font Classes */
-        .font-body,
-        .font-sans {
+        .font-body, .font-sans {
             font-family: var(--font-body);
         }
 
@@ -138,28 +128,20 @@
         ::-webkit-scrollbar {
             width: 9px;
         }
-
         ::-webkit-scrollbar-track {
             background: var(--bg-base);
         }
-
         ::-webkit-scrollbar-thumb {
             background: var(--border-dark);
             border-radius: var(--radius-full);
             border: 2px solid var(--bg-base);
         }
-
         ::-webkit-scrollbar-thumb:hover {
             background: var(--text-muted);
         }
 
         /* Headings trong Manrope */
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-heading);
             color: var(--text-heading);
             font-weight: 700;
@@ -210,8 +192,7 @@
         /* Brand Logo: Chuẩn diacritic tiếng Việt, tăng 5px (từ 34px lên 39px) */
         .logo {
             font-family: var(--font-premium-serif);
-            font-size: 1.85rem;
-            /* ~39px */
+            font-size: 1.85rem; /* ~39px */
             font-weight: 600;
             color: var(--text-heading);
             letter-spacing: normal;
@@ -229,8 +210,7 @@
         .nav-links a {
             font-family: var(--font-heading);
             color: var(--text-muted);
-            font-size: 0.9rem;
-            /* ~19px */
+            font-size: 0.9rem; /* ~19px */
             font-weight: 600;
             padding: 0.35rem 0;
             position: relative;
@@ -279,8 +259,7 @@
             padding: 0.8rem 1.65rem;
             border-radius: var(--radius-md);
             font-weight: 600;
-            font-size: 0.9rem;
-            /* ~19px */
+            font-size: 0.9rem; /* ~19px */
             text-decoration: none;
             transition: var(--transition);
             display: inline-flex;
@@ -319,8 +298,7 @@
 
         .btn-sm {
             padding: 0.6rem 1.25rem;
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             border-radius: var(--radius-sm);
         }
 
@@ -349,8 +327,7 @@
         /* Dòng chữ nhận diện: Font chuẩn tiếng Việt, không bị tách dấu, tăng 5px (từ 68px lên 73px) */
         .hero-content h1 {
             font-family: var(--font-premium-serif);
-            font-size: 3.5rem;
-            /* ~73.5px */
+            font-size: 3.5rem; /* ~73.5px */
             font-weight: 600;
             color: var(--text-heading);
             line-height: 1.12;
@@ -361,8 +338,7 @@
         /* Tiêu đề phụ tăng 5px (từ 22px lên 27px) */
         .hero-subtitle {
             font-family: var(--font-heading);
-            font-size: 1.3rem;
-            /* ~27.3px */
+            font-size: 1.3rem; /* ~27.3px */
             color: var(--text-muted);
             font-weight: 600;
             margin-bottom: 1.6rem;
@@ -372,8 +348,7 @@
         /* Nội dung mô tả tăng 5px (từ 16px lên 21px) */
         .hero-description {
             font-family: var(--font-body);
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             color: var(--text-body);
             line-height: 1.72;
             margin-bottom: 2.35rem;
@@ -463,8 +438,7 @@
         /* Thông tin hồ sơ tăng 5px (từ 20px lên 25px) */
         .profile-circle-name {
             font-family: var(--font-body);
-            font-size: 1.2rem;
-            /* ~25.2px */
+            font-size: 1.2rem; /* ~25.2px */
             font-weight: 700;
             color: var(--text-heading);
             margin-bottom: 0.3rem;
@@ -473,8 +447,7 @@
         /* Thông tin phụ tăng 5px (từ 13px lên 18px) */
         .profile-circle-sub {
             font-family: var(--font-body);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             color: var(--text-muted);
             display: flex;
             align-items: center;
@@ -510,8 +483,7 @@
         /* Tiêu đề lớn tăng 5px (từ 36px lên 41px) */
         .section-title {
             font-family: var(--font-heading);
-            font-size: 1.95rem;
-            /* ~41px */
+            font-size: 1.95rem; /* ~41px */
             font-weight: 800;
             color: var(--text-heading);
             letter-spacing: -0.03em;
@@ -522,8 +494,7 @@
         .section-subtitle {
             font-family: var(--font-body);
             color: var(--text-muted);
-            font-size: 0.9rem;
-            /* ~19px */
+            font-size: 0.9rem; /* ~19px */
             max-width: 960px;
             line-height: 1.65;
         }
@@ -551,8 +522,7 @@
         /* Tiêu đề phụ tăng 5px (từ 23px lên 28px) */
         .about-content h3 {
             font-family: var(--font-heading);
-            font-size: 1.35rem;
-            /* ~28.3px */
+            font-size: 1.35rem; /* ~28.3px */
             font-weight: 700;
             margin-bottom: 1.35rem;
             color: var(--text-heading);
@@ -563,8 +533,7 @@
             font-family: var(--font-body);
             color: var(--text-body);
             margin-bottom: 1.35rem;
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             line-height: 1.72;
         }
 
@@ -585,8 +554,7 @@
 
         .highlight-number {
             font-family: var(--font-heading);
-            font-size: 1.5rem;
-            /* ~31.5px */
+            font-size: 1.5rem; /* ~31.5px */
             font-weight: 800;
             color: var(--text-heading);
             margin-bottom: 0.35rem;
@@ -594,8 +562,7 @@
 
         .highlight-label {
             font-family: var(--font-body);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             color: var(--text-muted);
             font-weight: 500;
         }
@@ -673,8 +640,7 @@
 
         .skill-category h3 {
             font-family: var(--font-heading);
-            font-size: 1.15rem;
-            /* ~24px */
+            font-size: 1.15rem; /* ~24px */
             font-weight: 700;
         }
 
@@ -690,8 +656,7 @@
             padding: 0.45rem 0.95rem;
             background-color: var(--bg-subtle);
             border-radius: var(--radius-sm);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             font-weight: 600;
             color: var(--text-heading);
             border: 1px solid var(--border-light);
@@ -887,8 +852,7 @@
         /* Tiêu đề dự án tăng 5px (từ 23px lên 28px) */
         .project-title {
             font-family: var(--font-heading);
-            font-size: 1.35rem;
-            /* ~28.3px */
+            font-size: 1.35rem; /* ~28.3px */
             font-weight: 800;
             color: var(--text-heading);
             letter-spacing: -0.02em;
@@ -896,8 +860,7 @@
 
         .project-time-badge {
             font-family: var(--font-body);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             font-weight: 600;
             color: var(--text-muted);
             background-color: var(--bg-subtle);
@@ -925,11 +888,9 @@
         }
 
         /* Overlines tăng 5px (từ 10px lên 15px) */
-        .meta-label,
-        .tech-stack-label {
+        .meta-label, .tech-stack-label {
             font-family: var(--font-heading);
-            font-size: 0.725rem;
-            /* ~15.2px */
+            font-size: 0.725rem; /* ~15.2px */
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
@@ -938,8 +899,7 @@
 
         .meta-val {
             font-family: var(--font-body);
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             color: var(--text-body);
         }
 
@@ -962,8 +922,7 @@
             background-color: var(--bg-subtle);
             border: 1px solid var(--border-light);
             border-radius: var(--radius-sm);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             font-weight: 500;
             color: var(--text-heading);
         }
@@ -977,8 +936,7 @@
 
         .project-feature-list li {
             font-family: var(--font-body);
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             color: var(--text-body);
             line-height: 1.7;
             position: relative;
@@ -1068,16 +1026,14 @@
 
         .timeline-title {
             font-family: var(--font-heading);
-            font-size: 1.25rem;
-            /* ~26px */
+            font-size: 1.25rem; /* ~26px */
             font-weight: 700;
             color: var(--text-heading);
         }
 
         .timeline-date {
             font-family: var(--font-heading);
-            font-size: 0.85rem;
-            /* ~18px */
+            font-size: 0.85rem; /* ~18px */
             font-weight: 600;
             color: var(--text-muted);
             background-color: var(--bg-subtle);
@@ -1090,16 +1046,14 @@
             font-family: var(--font-body);
             color: var(--accent-link);
             font-weight: 600;
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             margin-bottom: 0.95rem;
         }
 
         .timeline-description {
             font-family: var(--font-body);
             color: var(--text-body);
-            font-size: 1rem;
-            /* 21px */
+            font-size: 1rem; /* 21px */
             line-height: 1.7;
         }
 
@@ -1144,8 +1098,7 @@
 
         .education-card h3 {
             font-family: var(--font-heading);
-            font-size: 1.25rem;
-            /* ~26px */
+            font-size: 1.25rem; /* ~26px */
             font-weight: 700;
             margin-bottom: 0.6rem;
         }
@@ -1365,8 +1318,7 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            font-size: 1.15rem;
-            /* ~24px */
+            font-size: 1.15rem; /* ~24px */
             font-weight: 700;
             color: var(--text-heading);
         }
@@ -1380,6 +1332,15 @@
             display: flex;
             align-items: center;
             gap: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .cv-modal-actions .btn-sm {
+            white-space: nowrap;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .cv-modal-close {
@@ -1413,6 +1374,187 @@
             width: 100%;
             height: 100%;
             border: none;
+            display: block;
+        }
+
+        /* ==========================================================================
+           QA & TESTING SECTION & LIGHTBOX
+           ========================================================================== */
+        .skill-category--wide {
+            grid-column: 1 / -1;
+        }
+
+        .qa-inline-link {
+            color: var(--accent-link);
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: var(--transition);
+        }
+
+        .qa-inline-link:hover {
+            color: var(--text-heading);
+        }
+
+        .qa-intro-box {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem 2.25rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.35rem;
+        }
+
+        .qa-intro-text {
+            color: var(--text-body);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        .qa-intro-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            align-items: center;
+        }
+
+        .qa-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .qa-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .qa-card:hover {
+            border-color: var(--border-dark);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .qa-thumb-btn {
+            border: none;
+            padding: 0;
+            background: var(--bg-subtle);
+            cursor: zoom-in;
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .qa-thumb-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+
+        .qa-card:hover .qa-thumb-btn img {
+            transform: scale(1.02);
+        }
+
+        .qa-caption {
+            padding: 0.95rem 1.25rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.65rem;
+            font-size: 0.86rem;
+            color: var(--text-body);
+            line-height: 1.45;
+        }
+
+        .qa-badge {
+            font-family: var(--font-code);
+            font-size: 0.76rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: var(--radius-sm);
+            background-color: var(--bg-subtle);
+            color: var(--text-heading);
+            border: 1px solid var(--border);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .qa-lightbox {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(26, 25, 23, 0.85);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            z-index: 2100;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+        .qa-lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .qa-lightbox-content {
+            position: relative;
+            max-width: 1120px;
+            width: 100%;
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .qa-lightbox-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-base);
+            gap: 1rem;
+        }
+
+        .qa-lightbox-title {
+            font-family: var(--font-heading);
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text-heading);
+        }
+
+        .qa-lightbox-body {
+            background: #1a1917;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 80vh;
+            overflow: auto;
+        }
+
+        .qa-lightbox-body img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
             display: block;
         }
 
@@ -1458,7 +1600,6 @@
            RESPONSIVE DESIGN
            ========================================================================== */
         @media (max-width: 1024px) {
-
             .hero-container,
             .about-grid {
                 grid-template-columns: 1fr;
@@ -1497,7 +1638,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .skills-grid {
+            .skills-grid,
+            .qa-gallery {
                 grid-template-columns: 1fr;
             }
 
@@ -1509,8 +1651,7 @@
 
         @media (max-width: 768px) {
             html {
-                font-size: 19px;
-                /* Tối ưu kích thước trên màn hình di động */
+                font-size: 19px; /* Tối ưu kích thước trên màn hình di động */
             }
 
             .navbar {
@@ -1689,34 +1830,33 @@
         }
     </style>
 </head>
-
 <body>
 
 
-    <!-- Hero Section (Trần Thế Hào chuẩn khoảng cách dấu tiếng Việt) -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content" data-aos="fade-up">
                 <h1 class="font-premium-serif">Trần Thế Hào</h1>
-                <p class="hero-subtitle">Game Designer & Software Engineer</p>
+                <p class="hero-subtitle">Game QA & Software Engineer</p>
                 <p class="hero-description">
-                    Sinh viên năm cuối ngành Kỹ sư phần mềm, định hướng Game Designer cho game giáo dục 2D.
-                    Đã tự thiết kế và phát triển 2 game (Godot, Cocos Creator) và 1 nền tảng học tập web có đủ 4 vai trò
-                    người dùng.
-                    Thế mạnh: biến kiến thức thành cơ chế chơi tương tác, kết hợp tư duy kiểm thử và chẩn đoán lỗi để
-                    tinh chỉnh trải nghiệm người chơi.
+                    Sinh viên tốt nghiệp ngành Kỹ sư phần mềm (đã hoàn thành toàn bộ tín chỉ, dự kiến nhận bằng 30/11/2026) với kinh nghiệm thực chiến trong kiểm thử và gỡ lỗi các game cùng nền tảng web do chính mình phát triển. 
+                    Tôi đã từng chẩn đoán các sự cố tải tài nguyên (asset-loading), lỗi giao diện người dùng (UI) và tính tương thích trên nhiều trình duyệt, luôn truy tìm nguyên nhân gốc rễ của sự cố. 
+                    Quen thuộc với nhiều thể loại game (FPS, MOBA, battle royale, puzzle, casual) và sẵn sàng khởi đầu sự nghiệp trong lĩnh vực đảm bảo chất lượng game (Game QA).
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-arrow-down"></i> Xem dự án cá nhân
+                        <i class="fas fa-arrow-down"></i> Xem dự án
+                    </a>
+                    <a href="#qa" class="btn btn-secondary">
+                        <i class="fas fa-bug"></i> Xem QA & Kiểm thử
                     </a>
                     <button type="button" class="btn btn-secondary" id="btnOpenCv">
                         <i class="fas fa-file-pdf"></i> Xem CV
                     </button>
                 </div>
                 <div class="hero-socials">
-                    <a href="https://github.com/thaof12/" target="_blank" rel="noopener noreferrer" class="social-link"
-                        title="GitHub">
+                    <a href="https://github.com/thaof12/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:tranthehao7431@gmail.com" class="social-link" title="Email">
@@ -1730,12 +1870,12 @@
             <div class="hero-image" data-aos="fade-up" data-aos-delay="100">
                 <div class="profile-circle-wrapper">
                     <div class="profile-circle-container">
-                        <img src="avata.jpg" alt="Trần Thế Hào avatar" class="profile-circle-img" id="profileImg">
+                        <img src="avata.jpg" alt="Ảnh đại diện Trần Thế Hào" class="profile-circle-img" id="profileImg">
                     </div>
                     <div class="profile-circle-caption">
                         <div class="profile-circle-name">Trần Thế Hào</div>
                         <div class="profile-circle-sub">
-                            <i class="fas fa-map-marker-alt"></i> TP. HCM
+                            <i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh
                         </div>
                     </div>
                 </div>
@@ -1749,17 +1889,26 @@
     <section class="skills" id="skills">
         <div class="section-container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Công nghệ & Kỹ năng</h2>
-                <p class="section-subtitle">Năng lực chuyên môn được rèn luyện qua các dự án game và hệ thống thực tế
-                </p>
+                <h2 class="section-title">Kỹ năng & Công nghệ</h2>
+                <p class="section-subtitle">Năng lực chuyên môn được rèn luyện qua các dự án game và hệ thống thực tế</p>
             </div>
             <div class="skills-grid">
+                <div class="skill-category skill-category--wide" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-category-header">
+                        <h3>Kiểm thử (Testing)</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Test Cases</span>
+                        <span class="skill-tag">Bug Reporting</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Cross-browser Testing</span>
+                        <span class="skill-tag">Root-cause Analysis</span>
+                    </div>
+                </div>
+
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="50">
                     <div class="skill-category-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>Game Design</h3>
+                        <h3>Thiết kế Game (Game Design)</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Thiết kế gameplay</span>
@@ -1773,10 +1922,7 @@
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-category-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Engine & Code</h3>
+                        <h3>Engine & Lập trình</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Godot Engine 4</span>
@@ -1790,9 +1936,6 @@
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
                     <div class="skill-category-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
                         <h3>Web & Hệ thống</h3>
                     </div>
                     <div class="skill-tags">
@@ -1807,16 +1950,13 @@
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-category-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
                         <h3>Kỹ năng mềm</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Tư duy thiết kế</span>
+                        <span class="skill-tag">Tư duy thiết kế (Design Thinking)</span>
                         <span class="skill-tag">Chủ động tự học</span>
                         <span class="skill-tag">Làm việc nhóm</span>
-                        <span class="skill-tag">Chẩn đoán lỗi hệ thống</span>
+                        <span class="skill-tag">Chẩn đoán sự cố hệ thống</span>
                     </div>
                 </div>
             </div>
@@ -1827,45 +1967,42 @@
     <section class="projects section-alt" id="projects">
         <div class="section-container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Dự án cá nhân</h2>
-                <p class="section-subtitle">Các dự án game mô phỏng và nền tảng học tập thực tế với khả năng tương tác
-                    cao</p>
+                <h2 class="section-title">Dự án tiêu biểu</h2>
+                <p class="section-subtitle">Các tựa game 2D mô phỏng vật lý tương tác và nền tảng web giáo dục</p>
             </div>
-
+            
             <div class="projects-showcase-list">
-
-                <!-- DỰ ÁN 1: Robot Eureka -->
+                
+                <!-- PROJECT 1: Robot Eureka -->
                 <article class="project-showcase-card" data-aos="fade-up">
                     <div class="project-slider" data-slider="slider-robot-eureka">
                         <div class="slider-viewport">
                             <div class="slider-track">
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/welcome-scene.webp" alt="Robot Eureka - Màn hình chào mừng"
-                                        loading="eager" fetchpriority="high">
+                                    <img src="robot-eureka/welcome-scene.webp" alt="Robot Eureka - Welcome screen" loading="eager" fetchpriority="high">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/scene-1.webp" alt="Robot Eureka - Màn chơi 1" loading="lazy">
+                                    <img src="robot-eureka/scene-1.webp" alt="Robot Eureka - Level 1" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/scene-2.webp" alt="Robot Eureka - Màn chơi 2" loading="lazy">
+                                    <img src="robot-eureka/scene-2.webp" alt="Robot Eureka - Level 2" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/scene-3.webp" alt="Robot Eureka - Màn chơi 3" loading="lazy">
+                                    <img src="robot-eureka/scene-3.webp" alt="Robot Eureka - Level 3" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/scene-4.webp" alt="Robot Eureka - Màn chơi 4" loading="lazy">
+                                    <img src="robot-eureka/scene-4.webp" alt="Robot Eureka - Level 4" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="robot-eureka/scene-back.webp" alt="Robot Eureka - Chi tiết thử thách"
-                                        loading="lazy">
+                                    <img src="robot-eureka/scene-back.webp" alt="Robot Eureka - Challenge details" loading="lazy">
                                 </div>
                             </div>
                         </div>
 
-                        <button class="slider-arrow slider-prev" aria-label="Xem ảnh trước">
+                        <button class="slider-arrow slider-prev" aria-label="Previous slide">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button class="slider-arrow slider-next" aria-label="Xem ảnh tiếp theo">
+                        <button class="slider-arrow slider-next" aria-label="Next slide">
                             <i class="fas fa-chevron-right"></i>
                         </button>
 
@@ -1875,11 +2012,10 @@
                     <div class="project-details">
                         <div class="project-header">
                             <div class="project-title-group">
-                                <h3 class="project-title">Robot Eureka - Game 2D mô phỏng và giải đố vật lý</h3>
+                                <h3 class="project-title">Robot Eureka – Game 2D mô phỏng & giải đố vật lý</h3>
                             </div>
                             <div class="project-actions">
-                                <a href="https://robot-physic-eureka.vercel.app/" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-primary">
+                                <a href="https://robot-physic-eureka.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                                     <i class="fas fa-arrow-up-right-from-square"></i> Mở dự án
                                 </a>
                             </div>
@@ -1906,62 +2042,48 @@
 
                         <ul class="project-feature-list">
                             <li>
-                                <strong>Thiết kế màn giải đố:</strong> Xoay quanh 3 hiện tượng vật lý: lực đàn hồi lò xo
-                                (định luật Hooke), khúc xạ/phản xạ tia sáng qua cụm thấu kính, cơ học cáp kéo – ròng rọc
-                                thang máy.
+                                <strong>Thiết kế màn giải đố:</strong> Thiết kế các màn chơi giải đố xoay quanh 3 hiện tượng vật lý: lực đàn hồi lò xo (định luật Hooke), khúc xạ/phản xạ tia sáng qua cụm thấu kính, và cơ học cáp kéo – ròng rọc trong thang máy.
                             </li>
                             <li>
-                                <strong>Cơ chế tương tác:</strong> Người chơi tự điều chỉnh thông số và quan sát kết quả
-                                ngay (tia sáng vẽ động bằng Raycasting 2D, va chạm Collider 2D, cản/nâng trọng lực).
-                            </li>
-                            <li>
-                                <strong>Kỹ năng:</strong> Rèn luyện kỹ năng phân tích lỗi và hỗ trợ kỹ thuật theo tình
-                                huống thực tế.
+                                <strong>Cơ chế tương tác:</strong> Xây dựng cơ chế tương tác: người chơi tự điều chỉnh thông số và quan sát kết quả tức thì (tia sáng vẽ động bằng raycasting 2D, va chạm collider 2D, đối trọng/nâng trọng lực).
                             </li>
                         </ul>
                     </div>
                 </article>
 
-                <!-- DỰ ÁN 2: Shi with You -->
+                <!-- PROJECT 2: Shi with You -->
                 <article class="project-showcase-card" data-aos="fade-up">
                     <div class="project-slider" data-slider="slider-shi-with-you">
                         <div class="slider-viewport">
                             <div class="slider-track">
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-welcome.webp" alt="Shi with You - Màn hình bắt đầu"
-                                        loading="eager" fetchpriority="high">
+                                    <img src="Shi-with-you/shi-welcome.webp" alt="Shi with You - Start screen" loading="eager" fetchpriority="high">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-choose-game.webp" alt="Shi with You - Chọn chế độ chơi"
-                                        loading="lazy">
+                                    <img src="Shi-with-you/shi-choose-game.webp" alt="Shi with You - Select game mode" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-memory-card.webp"
-                                        alt="Shi with You - Thử thách Memory Card" loading="lazy">
+                                    <img src="Shi-with-you/shi-memory-card.webp" alt="Shi with You - Memory Card challenge" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-picture-match.webp"
-                                        alt="Shi with You - Thử thách Picture Match" loading="lazy">
+                                    <img src="Shi-with-you/shi-picture-match.webp" alt="Shi with You - Picture Match challenge" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-word-catcher.webp"
-                                        alt="Shi with You - Thử thách Word Catcher" loading="lazy">
+                                    <img src="Shi-with-you/shi-word-catcher.webp" alt="Shi with You - Word Catcher challenge" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-spell-bridge.webp"
-                                        alt="Shi with You - Thử thách Spell Bridge" loading="lazy">
+                                    <img src="Shi-with-you/shi-spell-bridge.webp" alt="Shi with You - Spell Bridge challenge" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="Shi-with-you/shi-well-done.webp" alt="Shi with You - Hoàn thành xuất sắc"
-                                        loading="lazy">
+                                    <img src="Shi-with-you/shi-well-done.webp" alt="Shi with You - Completion screen" loading="lazy">
                                 </div>
                             </div>
                         </div>
 
-                        <button class="slider-arrow slider-prev" aria-label="Xem ảnh trước">
+                        <button class="slider-arrow slider-prev" aria-label="Previous slide">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button class="slider-arrow slider-next" aria-label="Xem ảnh tiếp theo">
+                        <button class="slider-arrow slider-next" aria-label="Next slide">
                             <i class="fas fa-chevron-right"></i>
                         </button>
 
@@ -1971,12 +2093,10 @@
                     <div class="project-details">
                         <div class="project-header">
                             <div class="project-title-group">
-                                <h3 class="project-title">Shi with You - Game hỗ trợ học tập cho trẻ em môn tiếng anh
-                                </h3>
+                                <h3 class="project-title">Shi with You – Game học tiếng Anh cho trẻ em</h3>
                             </div>
                             <div class="project-actions">
-                                <a href="http://shiwith-you.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-primary">
+                                <a href="http://shiwith-you.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                                     <i class="fas fa-arrow-up-right-from-square"></i> Mở dự án
                                 </a>
                             </div>
@@ -2000,85 +2120,72 @@
 
                         <ul class="project-feature-list">
                             <li>
-                                <strong>Kịch bản & kiểm thử:</strong> Thiết kế kịch bản và kiểm thử chức năng (Memory
-                                Card, Picture Match, Word Catcher, Spell Bridge), quản trị tệp tin dữ liệu hệ thống trên
-                                đa nền tảng.
+                                <strong>QA & Ghi nhận lỗi (Bug Logging):</strong> Viết 17 test case (chức năng, trường hợp biên, âm thanh, mạng chậm, trình duyệt) và ghi nhận 5 lỗi trên Jira với đầy đủ các bước tái hiện, môi trường và mức độ ưu tiên.
                             </li>
                             <li>
-                                <strong>Phân tích lỗi:</strong> Rèn luyện kỹ năng phân tích lỗi, nâng cao tư duy chẩn
-                                đoán và khắc phục sự cố hệ thống thực tế tại doanh nghiệp.
+                                <strong>Chẩn đoán & Tương thích hệ thống:</strong> Chẩn đoán và xử lý các vấn đề tải tài nguyên (hình ảnh, âm thanh), lỗi giao diện người dùng (UI) và tính tương thích trên nhiều trình duyệt.
                             </li>
                             <li>
-                                <strong>Tối ưu hóa:</strong> Chẩn đoán, xử lý các sự cố tải tài nguyên ứng dụng (hình
-                                ảnh, âm thanh), lỗi giao diện và lỗi tương thích trình duyệt của người dùng cuối.
+                                <strong>Thiết kế kịch bản & Quản lý dữ liệu:</strong> Thiết kế kịch bản cho 4 trò chơi nhỏ (Lật thẻ nhớ, Ghép tranh, Bắt chữ, Cầu nối từ) và quản lý các tệp dữ liệu trên các nền tảng.
+                            </li>
+                            <li>
+                                <strong>Báo cáo QA:</strong> <a href="#qa" class="qa-inline-link">xem chi tiết tại phần QA & Kiểm thử</a>
                             </li>
                         </ul>
                     </div>
                 </article>
 
-                <!-- DỰ ÁN 3: Eureka -->
+                <!-- PROJECT 3: Eureka -->
                 <article class="project-showcase-card" data-aos="fade-up">
                     <div class="project-slider" data-slider="slider-eureka">
                         <div class="slider-viewport">
                             <div class="slider-track">
                                 <div class="slider-slide">
-                                    <img src="EUREKA/home-page.webp" alt="Eureka - Trang chủ nền tảng học tập vật lý"
-                                        loading="eager" fetchpriority="high">
+                                    <img src="EUREKA/home-page.webp" alt="Eureka - Physics learning platform homepage" loading="eager" fetchpriority="high">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/sign-up.webp" alt="Eureka - Giao diện đăng ký tài khoản"
-                                        loading="lazy">
+                                    <img src="EUREKA/sign-up.webp" alt="Eureka - Sign up interface" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/class.webp" alt="Eureka - Danh sách và tham gia lớp học"
-                                        loading="lazy">
+                                    <img src="EUREKA/class.webp" alt="Eureka - Course list and enrollment" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/my-class-page.webp" alt="Eureka - Chi tiết lớp học của tôi"
-                                        loading="lazy">
+                                    <img src="EUREKA/my-class-page.webp" alt="Eureka - My classes overview" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/video-lesson.webp" alt="Eureka - Bài giảng tương tác"
-                                        loading="lazy">
+                                    <img src="EUREKA/video-lesson.webp" alt="Eureka - Interactive video lesson" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/my-class.webp" alt="Eureka - Lớp học tương tác" loading="lazy">
+                                    <img src="EUREKA/my-class.webp" alt="Eureka - Interactive classroom" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/interact.webp"
-                                        alt="Eureka - Phòng thí nghiệm ảo & tương tác trực quan" loading="lazy">
+                                    <img src="EUREKA/interact.webp" alt="Eureka - Virtual lab & visual interaction" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/caculator.webp" alt="Eureka - Máy tính và công cụ vật lý"
-                                        loading="lazy">
+                                    <img src="EUREKA/caculator.webp" alt="Eureka - Physics calculator & tools" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/game-robot.webp" alt="Eureka - Tích hợp Game Robot Eureka"
-                                        loading="lazy">
+                                    <img src="EUREKA/game-robot.webp" alt="Eureka - Robot Eureka game integration" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/pk-battle.webp" alt="Eureka - Thi đấu đối kháng PK 1vs1"
-                                        loading="lazy">
+                                    <img src="EUREKA/pk-battle.webp" alt="Eureka - 1v1 PK battle challenge" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/profile.webp" alt="Eureka - Hồ sơ người dùng & bảng xếp hạng XP"
-                                        loading="lazy">
+                                    <img src="EUREKA/profile.webp" alt="Eureka - User profile & XP leaderboard" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/teacher-dashboard.webp" alt="Eureka - Bảng điều khiển Giáo viên"
-                                        loading="lazy">
+                                    <img src="EUREKA/teacher-dashboard.webp" alt="Eureka - Teacher dashboard" loading="lazy">
                                 </div>
                                 <div class="slider-slide">
-                                    <img src="EUREKA/admin-dashboard.webp" alt="Eureka - Bảng điều khiển Quản trị viên"
-                                        loading="lazy">
+                                    <img src="EUREKA/admin-dashboard.webp" alt="Eureka - Admin dashboard" loading="lazy">
                                 </div>
                             </div>
                         </div>
 
-                        <button class="slider-arrow slider-prev" aria-label="Xem ảnh trước">
+                        <button class="slider-arrow slider-prev" aria-label="Previous slide">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button class="slider-arrow slider-next" aria-label="Xem ảnh tiếp theo">
+                        <button class="slider-arrow slider-next" aria-label="Next slide">
                             <i class="fas fa-chevron-right"></i>
                         </button>
 
@@ -2088,11 +2195,10 @@
                     <div class="project-details">
                         <div class="project-header">
                             <div class="project-title-group">
-                                <h3 class="project-title">Eureka - Website hỗ trợ học tập môn vật lý</h3>
+                                <h3 class="project-title">Eureka – Website hỗ trợ học tập môn vật lý</h3>
                             </div>
                             <div class="project-actions">
-                                <a href="https://eureka-th.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-primary">
+                                <a href="https://eureka-th.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                                     <i class="fas fa-arrow-up-right-from-square"></i> Mở dự án
                                 </a>
                             </div>
@@ -2120,19 +2226,13 @@
 
                         <ul class="project-feature-list">
                             <li>
-                                <strong>Hệ thống phân quyền 4 vai trò:</strong> Guest, Student (bài giảng, máy tính vật
-                                lý, game, PK 1vs1), Teacher (tạo lớp, giao bài), Admin (quản lý người dùng, nội dung,
-                                duyệt giáo viên).
+                                <strong>Hệ thống phân quyền 4 vai trò:</strong> Triển khai hệ thống phân quyền 4 vai trò: Khách (Guest); Học sinh (Student - bài giảng, máy tính vật lý, game, chế độ thi đấu PK 1vs1); Giáo viên (Teacher - tạo lớp học, giao bài tập); Quản trị viên (Admin - quản lý người dùng và nội dung, duyệt tài khoản giáo viên).
                             </li>
                             <li>
-                                <strong>Hệ sinh thái học tập:</strong> Cung cấp bài giảng tương tác, phòng thí nghiệm ảo
-                                chạy trên HTML5 Canvas, công cụ máy tính vật lý và tích hợp trực tiếp game 2D Robot
-                                Eureka qua iframe.
+                                <strong>Hệ sinh thái học tập:</strong> Cung cấp các bài giảng tương tác, phòng thí nghiệm ảo vận hành trên HTML5 Canvas, công cụ tính toán vật lý và tích hợp trực tiếp tựa game 2D Robot Eureka (nhúng qua iframe).
                             </li>
                             <li>
-                                <strong>Hệ thống & tối ưu:</strong> Thiết kế kiến trúc 3 tầng (React, Express,
-                                PostgreSQL), thiết lập bảo mật Row Level Security và tối ưu hóa hiệu năng tải trang đa
-                                thiết bị.
+                                <strong>Hệ thống & Tối ưu hóa:</strong> Thiết kế kiến trúc 3 tầng (React, Express, PostgreSQL), thiết lập bảo mật cấp hàng (Row Level Security - RLS) và tối ưu hóa hiệu năng tải trang trên đa thiết bị.
                             </li>
                         </ul>
                     </div>
@@ -2142,13 +2242,105 @@
         </div>
     </section>
 
+    <!-- QA & Testing Section -->
+    <section class="qa-section" id="qa">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">QA & Kiểm thử</h2>
+                <p class="section-subtitle">Kiểm thử thủ công toàn diện (End-to-end), thiết kế test case và theo dõi lỗi trên Jira cho Shi with You</p>
+            </div>
+
+            <div class="qa-intro-box" data-aos="fade-up">
+                <p class="qa-intro-text">
+                    Nhằm thực hành quy trình đảm bảo chất lượng game (Game QA), tôi đã thực hiện kiểm thử tựa game học tiếng Anh "Shi with You" từ đầu đến cuối. Tôi đã viết 17 test case bao quát các chức năng cốt lõi, các trường hợp biên (edge cases), âm thanh, tải trên mạng chậm, thay đổi kích thước cửa sổ và kiểm thử trên các trình duyệt (Chrome và Edge). Sau đó, tôi ghi nhận 5 lỗi phát hiện được lên Jira, mỗi lỗi đều có thông tin môi trường chi tiết, các bước tái hiện, kết quả mong đợi và thực tế, cùng mức độ ưu tiên.
+                </p>
+                <div class="qa-intro-actions">
+                    <a href="https://docs.google.com/spreadsheets/d/1NWD5Yy3ZmbOR9OpK3xcG12daijOcjYk_h3Dh9smAprY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-table"></i> Danh sách test case (Google Sheets)
+                    </a>
+                </div>
+            </div>
+
+            <div class="qa-gallery" data-aos="fade-up">
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-board.png" data-qa-title="Board — Tổng quan Jira Board gồm 5 lỗi đã ghi nhận (SWYQ-1 đến SWYQ-5)">
+                        <img src="jira-board.png" alt="Jira Board - Shi with You QA" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">Board</span>
+                        <span>Tổng quan Jira Board gồm 5 lỗi đã ghi nhận (SWYQ-1 đến SWYQ-5)</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-list.png" data-qa-title="List — Danh sách issue trên Jira hiển thị mức độ ưu tiên, người báo cáo và trạng thái">
+                        <img src="jira-list.png" alt="Jira List - Shi with You QA" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">List</span>
+                        <span>Danh sách issue trên Jira hiển thị mức độ ưu tiên, người báo cáo và trạng thái</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-swyq-1.png" data-qa-title="SWYQ-1 — [Cài đặt] Thanh trượt &quot;Voice&quot; hiển thị nhưng không liên kết với bất kỳ tính năng nào trong game">
+                        <img src="jira-swyq-1.png" alt="Jira SWYQ-1 - Lỗi thanh trượt Voice" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">SWYQ-1</span>
+                        <span>[Cài đặt] Thanh trượt "Voice" hiển thị nhưng không liên kết với bất kỳ tính năng nào trong game</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-swyq-2.png" data-qa-title="SWYQ-2 — [Màn hình chào] Nút &quot;Exit&quot; chỉ tắt nhạc và khiến các nút khác không phản hồi">
+                        <img src="jira-swyq-2.png" alt="Jira SWYQ-2 - Lỗi nút Exit" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">SWYQ-2</span>
+                        <span>[Màn hình chào] Nút "Exit" chỉ tắt nhạc và khiến các nút khác không phản hồi</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-swyq-3.png" data-qa-title="SWYQ-3 — [Hiệu năng] Lần tải đầu mất khoảng 4.3 phút trên mạng Slow 4G (45.9 MB)">
+                        <img src="jira-swyq-3.png" alt="Jira SWYQ-3 - Lỗi hiệu năng mạng Slow 4G" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">SWYQ-3</span>
+                        <span>[Hiệu năng] Lần tải đầu mất khoảng 4.3 phút trên mạng Slow 4G (45.9 MB)</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-swyq-4.png" data-qa-title="SWYQ-4 — [Ghép tranh / Bắt chữ] Biểu tượng cạnh điểm số hiển thị thành ô vuông lỗi ký tự (missing-glyph)">
+                        <img src="jira-swyq-4.png" alt="Jira SWYQ-4 - Lỗi ô vuông hiển thị biểu tượng điểm số" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">SWYQ-4</span>
+                        <span>[Ghép tranh / Bắt chữ] Biểu tượng cạnh điểm số hiển thị thành ô vuông lỗi ký tự (missing-glyph)</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="qa-card">
+                    <button type="button" class="qa-thumb-btn" data-qa-src="jira-swyq-5.png" data-qa-title="SWYQ-5 — [Màn hình chào] Hiệu ứng rơi hiển thị thành các ô vuông lỗi ký tự (missing-glyph)">
+                        <img src="jira-swyq-5.png" alt="Jira SWYQ-5 - Lỗi ô vuông hiệu ứng rơi" loading="lazy">
+                    </button>
+                    <figcaption class="qa-caption">
+                        <span class="qa-badge">SWYQ-5</span>
+                        <span>[Màn hình chào] Hiệu ứng rơi hiển thị thành các ô vuông lỗi ký tự (missing-glyph)</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
 
     <!-- Education Section -->
     <section class="education section-alt" id="education">
         <div class="section-container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title">Học vấn & Chứng chỉ</h2>
-                <p class="section-subtitle">Nền tảng đào tạo chính quy cùng các chứng chỉ kỹ năng đạt được</p>
+                <p class="section-subtitle">Nền tảng đào tạo chính quy cùng các chứng chỉ kỹ năng chuyên môn</p>
             </div>
             <div class="education-grid">
                 <div class="education-card" data-aos="fade-up">
@@ -2157,8 +2349,8 @@
                     </div>
                     <h3>Trường Đại học Nguyễn Tất Thành</h3>
                     <p class="school">Khoa Công nghệ Thông tin – Ngành Kỹ sư phần mềm</p>
-                    <p class="details">Thời gian đào tạo: 2022 – 2026</p>
-                    <p class="education-gpa"><strong>GPA: 3.61/4.0</strong></p>
+                    <p class="details">Thời gian đào tạo: 2022 – 2026 | Dự kiến nhận bằng 30/11/2026</p>
+                    <p class="education-gpa"><strong>GPA: 3.61 / 4.0</strong></p>
                 </div>
 
                 <div class="education-card" data-aos="fade-up" data-aos-delay="100">
@@ -2197,11 +2389,10 @@
         <div class="section-container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title">Kết nối với tôi</h2>
-                <p class="section-subtitle">Tôi luôn trân trọng mọi cơ hội hợp tác nghề nghiệp hoặc trao đổi chuyên môn
-                </p>
+                <p class="section-subtitle">Tôi luôn trân trọng mọi cơ hội hợp tác nghề nghiệp hoặc trao đổi chuyên môn</p>
             </div>
 
-            <!-- Các thẻ liên hệ căn giữa hàng ngang, shape đều đẹp không rớt chữ -->
+            <!-- Contact cards centered horizontally -->
             <div class="contact-cards-row" data-aos="fade-up">
                 <!-- Email -->
                 <a href="mailto:tranthehao7431@gmail.com" class="contact-card-box">
@@ -2222,8 +2413,7 @@
                 </a>
 
                 <!-- GitHub -->
-                <a href="https://github.com/thaof12/" target="_blank" rel="noopener noreferrer"
-                    class="contact-card-box">
+                <a href="https://github.com/thaof12/" target="_blank" rel="noopener noreferrer" class="contact-card-box">
                     <div class="contact-card-icon">
                         <i class="fab fa-github"></i>
                     </div>
@@ -2234,7 +2424,7 @@
         </div>
     </section>
 
-    <!-- Footer (Logo chuẩn tiếng Việt, tăng 5px) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p class="footer-text">
@@ -2252,11 +2442,10 @@
                     <span>Trần Thế Hào - Curriculum Vitae</span>
                 </div>
                 <div class="cv-modal-actions">
-                    <a href="TranTheHao - CV.pdf" download="TranTheHao - CV.pdf" class="btn btn-secondary btn-sm">
+                    <a href="TranTheHao - CV - QA.pdf" download="TranTheHao - CV - QA.pdf" class="btn btn-secondary btn-sm">
                         <i class="fas fa-download"></i> Tải về
                     </a>
-                    <a href="TranTheHao - CV.pdf" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary btn-sm">
+                    <a href="TranTheHao - CV - QA.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                         <i class="fas fa-arrow-up-right-from-square"></i> Mở tab mới
                     </a>
                     <button type="button" class="cv-modal-close" id="cvModalClose" aria-label="Đóng popup xem trước">
@@ -2265,14 +2454,29 @@
                 </div>
             </div>
             <div class="cv-modal-body">
-                <iframe src="TranTheHao - CV.pdf" class="cv-iframe" title="Bản xem trước TranTheHao - CV.pdf"></iframe>
+                <iframe src="TranTheHao - CV - QA.pdf" class="cv-iframe" title="Bản xem trước TranTheHao - CV - QA.pdf"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- QA Screenshot Lightbox -->
+    <div class="qa-lightbox" id="qaLightbox" aria-hidden="true">
+        <div class="qa-lightbox-content" role="dialog" aria-modal="true" aria-labelledby="qaLightboxTitle">
+            <div class="qa-lightbox-header">
+                <div class="qa-lightbox-title" id="qaLightboxTitle"></div>
+                <button type="button" class="cv-modal-close" id="qaLightboxClose" aria-label="Đóng xem trước hình ảnh">
+                    <i class="fas fa-xmark"></i>
+                </button>
+            </div>
+            <div class="qa-lightbox-body">
+                <img alt="Xem trước ảnh chụp màn hình QA" id="qaLightboxImg">
             </div>
         </div>
     </div>
 
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    
     <script>
         AOS.init({
             duration: 600,
@@ -2294,7 +2498,7 @@
 
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
-
+        
         if (mobileMenuBtn && navLinks) {
             mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
@@ -2366,14 +2570,14 @@
         // Image Slider Controller
         function initProjectSliders() {
             const sliders = document.querySelectorAll('.project-slider');
-
+            
             sliders.forEach((slider) => {
                 const track = slider.querySelector('.slider-track');
                 const slides = slider.querySelectorAll('.slider-slide');
                 const prevBtn = slider.querySelector('.slider-prev');
                 const nextBtn = slider.querySelector('.slider-next');
                 const dotsContainer = slider.querySelector('.slider-dots');
-
+                
                 let currentIndex = 0;
                 const total = slides.length;
                 if (total === 0) return;
@@ -2382,7 +2586,7 @@
                 for (let i = 0; i < total; i++) {
                     const dot = document.createElement('button');
                     dot.className = `slider-dot ${i === 0 ? 'active' : ''}`;
-                    dot.setAttribute('aria-label', `Chuyển tới ảnh ${i + 1}`);
+                    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
                     dot.addEventListener('click', (e) => {
                         e.preventDefault();
                         goToSlide(i);
@@ -2444,7 +2648,51 @@
 
         document.addEventListener('DOMContentLoaded', initProjectSliders);
         initProjectSliders();
+
+        // QA Screenshot Lightbox Controller
+        const qaLightbox = document.getElementById('qaLightbox');
+        const qaLightboxImg = document.getElementById('qaLightboxImg');
+        const qaLightboxTitle = document.getElementById('qaLightboxTitle');
+        const qaLightboxClose = document.getElementById('qaLightboxClose');
+
+        function openQaLightbox(src, title) {
+            if (!qaLightbox || !qaLightboxImg || !qaLightboxTitle) return;
+            qaLightboxImg.src = src;
+            qaLightboxImg.alt = title;
+            qaLightboxTitle.textContent = title;
+            qaLightbox.classList.add('active');
+            qaLightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        }
+
+        function closeQaLightbox() {
+            if (!qaLightbox) return;
+            qaLightbox.classList.remove('active');
+            qaLightbox.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+        }
+
+        document.querySelectorAll('.qa-thumb-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                openQaLightbox(btn.dataset.qaSrc, btn.dataset.qaTitle);
+            });
+        });
+
+        if (qaLightboxClose) {
+            qaLightboxClose.addEventListener('click', closeQaLightbox);
+        }
+
+        if (qaLightbox) {
+            qaLightbox.addEventListener('click', (e) => {
+                if (e.target === qaLightbox) closeQaLightbox();
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && qaLightbox && qaLightbox.classList.contains('active')) {
+                closeQaLightbox();
+            }
+        });
     </script>
 </body>
-
 </html>
